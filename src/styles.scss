@@ -1,6 +1,11 @@
 $pink: rgb(244,48,133);
 $black: #2a2830;
 
+.App {
+  padding-bottom: 50px;
+}
+
+
 body {
   font-family: helvetica, arial, sans-serif;
   font-weight: 300;
@@ -50,6 +55,8 @@ body {
       align-items: center;
       width: 35%;
       font-size: 13px;
+      font-family: "filson-pro";
+      font-weight: 200;
 
       a {
           text-decoration: none;
@@ -95,10 +102,16 @@ body {
 
     &__primary {
       font-size: 50px;
+      font-family: "filson-pro";
+      font-weight: 500;
+      line-height: 55px;
+      margin-bottom: 20px;
     }
 
     &__sub {
-
+      font-size: 20px;
+      font-family: "filson-pro";
+      font-weight: 200;
     }
 
   }
@@ -119,6 +132,7 @@ body {
   border-radius: 3px;
 
   &__tag {
+    font-family: "filson-pro";
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,6 +161,8 @@ body {
     padding-left: 40px;
     padding-right: 40px;
     margin-bottom: 30px;
+    font-family: "filson-pro";
+    font-weight: 200;
   }
 
   &__cta {
@@ -206,9 +222,13 @@ body {
     font-size: 25px;
     font-weight: 400;
     margin-bottom: 15px;
+    font-family: "filson-pro";
+    font-weight: 500;
   }
 
   &__pdesc {
+    font-family: "filson-pro";
+    font-weight: 200;
     margin-bottom: 15px;
     div {
       margin-bottom: 7px;
@@ -216,6 +236,8 @@ body {
   }
 
   &__summary {
+    font-family: "filson-pro";
+    font-weight: 200;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -237,7 +259,8 @@ body {
     padding: 0 35px;
     position: relative;
     display: inline-block;
-    font-family: helvetica, arial, sans-serif;
+    font-family: "filson-pro";
+
     font-weight: 300;
     font-size: 12px;
     line-height: 40px;
@@ -251,6 +274,11 @@ body {
     color: white;
     border-radius: 3px;
     text-decoration: none;
+    transition: .2s ease;
+
+    &:hover {
+      background-color: $black;
+    }
   }
 
 }
@@ -349,7 +377,34 @@ body {
       }
 
     }
+}
 
+.faqs {
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 800px;
+
+  &__headline {
+    font-family: "filson-pro";
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  &__sub {
+    font-family: "filson-pro";
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  &__faq {
+    box-shadow: 0 0 20px 0 rgba(42, 40, 48, 0.1);
+    padding: 30px;
+    width: 85%;
+    margin: 0 auto;
+  }
 
 }

@@ -17,8 +17,8 @@ class App extends Component {
           </div>
           <div className="hero">
             <div className="headline">
-              <div className="headline__primary">Weekly deals for the board-sport enthusiast</div>
-              <div className="headline__sub">and something to back it up</div>
+              <div className="headline__primary">Weekly deals for the <br /> board-sport enthusiast</div>
+              <div className="headline__sub">Get the hookup on surf, skate, & snowboarding goods.</div>
             </div>
           </div>
         </div>
@@ -50,6 +50,16 @@ class App extends Component {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="faqs">
+          <div className="faqs__headline">Have a question? We've got answers.</div>
+
+          <div className="faqs__faq">
+            <div className="faqs__question"></div>
+            <div className="faqs__answer"></div>
+          </div>
+
         </div>
 
 

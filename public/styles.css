@@ -1,3 +1,6 @@
+.App {
+  padding-bottom: 50px; }
+
 body {
   font-family: helvetica, arial, sans-serif;
   font-weight: 300; }
@@ -30,7 +33,9 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 35%;
-    font-size: 13px; }
+    font-size: 13px;
+    font-family: "filson-pro";
+    font-weight: 200; }
     .header .nav__links a {
       text-decoration: none; }
     .header .nav__links__link--cta {
@@ -59,7 +64,16 @@ body {
   text-align: center; }
 
 .header .headline__primary {
-  font-size: 50px; }
+  font-size: 50px;
+  font-family: "filson-pro";
+  font-weight: 500;
+  line-height: 55px;
+  margin-bottom: 20px; }
+
+.header .headline__sub {
+  font-size: 20px;
+  font-family: "filson-pro";
+  font-weight: 200; }
 
 .featured-brand {
   margin: 0 auto;
@@ -74,6 +88,7 @@ body {
   align-items: center;
   border-radius: 3px; }
   .featured-brand__tag {
+    font-family: "filson-pro";
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,7 +112,9 @@ body {
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-family: "filson-pro";
+    font-weight: 200; }
   .featured-brand__cta {
     padding: 0 35px;
     position: relative;
@@ -141,12 +158,18 @@ body {
   .featured-brand__pname {
     font-size: 25px;
     font-weight: 400;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    font-family: "filson-pro";
+    font-weight: 500; }
   .featured-brand__pdesc {
+    font-family: "filson-pro";
+    font-weight: 200;
     margin-bottom: 15px; }
     .featured-brand__pdesc div {
       margin-bottom: 7px; }
   .featured-brand__summary {
+    font-family: "filson-pro";
+    font-weight: 200;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -162,7 +185,7 @@ body {
     padding: 0 35px;
     position: relative;
     display: inline-block;
-    font-family: helvetica, arial, sans-serif;
+    font-family: "filson-pro";
     font-weight: 300;
     font-size: 12px;
     line-height: 40px;
@@ -175,7 +198,10 @@ body {
     cursor: pointer;
     color: white;
     border-radius: 3px;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: .2s ease; }
+    .featured-brand__btn:hover {
+      background-color: #2a2830; }
 
 .product__wrapper {
   box-shadow: 0 0 20px 0 rgba(42, 40, 48, 0.1);
@@ -247,3 +273,24 @@ body {
   opacity: 0.1; }
   .product__overlay:hover {
     opacity: 1; }
+
+.faqs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 800px; }
+  .faqs__headline {
+    font-family: "filson-pro";
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 30px; }
+  .faqs__sub {
+    font-family: "filson-pro";
+    font-weight: 300;
+    font-size: 15px; }
+  .faqs__faq {
+    box-shadow: 0 0 20px 0 rgba(42, 40, 48, 0.1);
+    padding: 30px;
+    width: 85%;
+    margin: 0 auto; }
