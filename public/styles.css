@@ -1,2 +1,249 @@
-.test {
-  color: green; }
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 300; }
+
+.container {
+  max-width: 80%;
+  margin: 0 auto; }
+
+.ml-30 {
+  margin-left: 30px; }
+
+.mr-30 {
+  margin-right: 30px; }
+
+.header .nav {
+  background-color: rgba(255, 255, 255, 0.3);
+  position: relative;
+  z-index: 1; }
+  .header .nav__wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    max-width: 90%; }
+  .header .nav__logo img {
+    height: 25px; }
+  .header .nav__links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+    font-size: 13px; }
+    .header .nav__links a {
+      text-decoration: none; }
+    .header .nav__links__link--cta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      height: 25px;
+      width: 150px;
+      border-radius: 3px;
+      background-color: #f43085;
+      transition: .2s ease; }
+      .header .nav__links__link--cta:hover {
+        background-color: #2a2830; }
+
+.header .hero {
+  top: -60px;
+  position: relative;
+  height: 600px;
+  background-image: url("/img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.header .headline__primary {
+  font-size: 50px; }
+
+.featured-brand {
+  margin: 0 auto;
+  position: relative;
+  top: -100px;
+  background-color: white;
+  padding-bottom: 30px;
+  width: 800px;
+  box-shadow: 0 0 20px 0 rgba(42, 40, 48, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3px; }
+  .featured-brand__tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -15px;
+    height: 30px;
+    width: 150px;
+    background-color: #2a2830;
+    color: white;
+    margin: 0 auto;
+    border-radius: 3px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  .featured-brand__brand {
+    margin-top: 30px;
+    font-size: 40px; }
+  .featured-brand__about {
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 30px; }
+  .featured-brand__cta {
+    padding: 0 35px;
+    position: relative;
+    display: inline-block;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 20px 0 rgba(42, 40, 48, 0.1);
+    background: #f43085;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px; }
+  .featured-brand__product {
+    width: 100%; }
+    .featured-brand__product__container {
+      width: 85%;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between; }
+    .featured-brand__product__image {
+      margin-right: 15px;
+      height: 300px;
+      background-image: url(https://voltfuse.com/wp-content/uploads/2015/10/greynordicflatf03-555x710.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      transition: 0.2s ease-out;
+      display: flex;
+      flex: 1; }
+    .featured-brand__product__info {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center; }
+  .featured-brand__pname {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 15px; }
+  .featured-brand__pdesc {
+    margin-bottom: 15px; }
+    .featured-brand__pdesc div {
+      margin-bottom: 7px; }
+  .featured-brand__summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; }
+    .featured-brand__summary--pricing {
+      font-size: 20px;
+      font-weight: 400; }
+      .featured-brand__summary--pricing span {
+        font-size: 14px;
+        color: #f43085;
+        text-decoration: line-through; }
+  .featured-brand__btn {
+    padding: 0 35px;
+    position: relative;
+    display: inline-block;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 20px 0 rgba(42, 40, 48, 0.1);
+    background: #f43085;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none; }
+
+.product__wrapper {
+  box-shadow: 0 0 20px 0 rgba(42, 40, 48, 0.1);
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  position: relative;
+  background-color: white;
+  border-radius: 3px; }
+
+.product__item {
+  background-image: url(https://voltfuse.com/wp-content/uploads/2015/10/greynordicflatf03-555x710.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: 0.2s ease-out;
+  height: 85%;
+  margin: 0 auto;
+  position: relative; }
+
+.product__info {
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  position: relative; }
+  .product__info a {
+    text-decoration: none;
+    padding: 0 35px;
+    position: relative;
+    display: inline-block;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 20px 0 rgba(42, 40, 48, 0.1);
+    background: #f43085;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px; }
+  .product__info__details__brand {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  .product__info__details__item {
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400; }
+    .product__info__details__item span {
+      opacity: 0.5; }
+
+.product__overlay {
+  transition: 0.2s ease-out;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  opacity: 0.1; }
+  .product__overlay:hover {
+    opacity: 1; }

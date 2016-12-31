@@ -1,3 +1,355 @@
-.test {
-  color: green;
+$pink: rgb(244,48,133);
+$black: #2a2830;
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+
+.header {
+
+  .nav {
+    background-color: rgba(255,255,255,0.3);
+    position: relative;
+    z-index: 1;
+
+    &__wrapper {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      max-width: 90%;
+
+    }
+
+    &__logo {
+
+      img {
+        height: 25px;
+      }
+    }
+
+    &__links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 35%;
+      font-size: 13px;
+
+      a {
+          text-decoration: none;
+      }
+
+      &__link--cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 25px;
+        width: 150px;
+        border-radius: 3px;
+        background-color: $pink;
+        transition: .2s ease;
+
+        &:hover {
+          background-color: $black
+        }
+
+
+
+      }
+
+    }
+
+  }
+
+  .hero {
+    top: -60px;
+    position: relative;
+    height: 600px;
+    background-image: url('/img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headline {
+
+    &__primary {
+      font-size: 50px;
+    }
+
+    &__sub {
+
+    }
+
+  }
+
+}
+
+.featured-brand {
+  margin: 0 auto;
+  position: relative;
+  top: -100px;
+  background-color: white;
+  padding-bottom: 30px;
+  width: 800px;
+  box-shadow: 0 0 20px 0 rgba(42, 40, 48, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3px;
+
+  &__tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -15px;
+    height: 30px;
+    width: 150px;
+    background-color: $black;
+    color: white;
+    margin: 0 auto;
+    border-radius: 3px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__brand {
+    margin-top: 30px;
+    font-size: 40px;
+  }
+
+  &__about {
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 30px;
+  }
+
+  &__cta {
+    padding: 0 35px;
+    position: relative;
+    display: inline-block;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 20px 0 rgba(42, 40, 48, 0.1);
+    background: $pink;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+  }
+
+  &__product {
+    width: 100%;
+
+
+    &__container {
+      width: 85%;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__image {
+      margin-right: 15px;
+      height: 300px;
+      background-image: url(https://voltfuse.com/wp-content/uploads/2015/10/greynordicflatf03-555x710.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      transition: 0.2s ease-out;
+      display: flex;
+      flex: 1;
+
+    }
+
+    &__info {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+  }
+
+  &__pname {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  &__pdesc {
+    margin-bottom: 15px;
+    div {
+      margin-bottom: 7px;
+    }
+  }
+
+  &__summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &--pricing {
+      font-size: 20px;
+      font-weight: 400;
+
+      span {
+        font-size: 14px;
+        color: $pink;
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  &__btn {
+    padding: 0 35px;
+    position: relative;
+    display: inline-block;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 20px 0 rgba(42, 40, 48, 0.1);
+    background: $pink;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+
+}
+
+.product {
+
+    &__wrapper {
+      box-shadow: 0 0 20px 0 rgba(42, 40, 48, 0.1);
+      height: 500px;
+      width: 500px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      padding-top: 20px;
+      position: relative;
+      background-color: white;
+      border-radius: 3px;
+
+    }
+
+    &__item {
+      background-image: url(https://voltfuse.com/wp-content/uploads/2015/10/greynordicflatf03-555x710.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      transition: 0.2s ease-out;
+      height: 85%;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    &__info {
+      height: 15%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1;
+      position: relative;
+
+      a {
+          text-decoration: none;
+          padding: 0 35px;
+          position: relative;
+          display: inline-block;
+          font-family: helvetica, arial, sans-serif;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 40px;
+          text-align: center;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          box-shadow: 0 0 20px 0 rgba(42, 40, 48, 0.1);
+          background: $pink;
+          height: 40px;
+          cursor: pointer;
+          color: white;
+          border-radius: 3px;
+
+      }
+
+      &__details {
+
+        &__brand {
+          font-size: 12px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+
+        &__item {
+          font-size: 15px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          font-weight: 400;
+
+          span {
+            opacity: 0.5;
+          }
+        }
+
+      }
+
+    }
+
+
+    &__overlay {
+      transition: 0.2s ease-out;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 100%;
+      background: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2));
+      opacity: 0.1;
+      &:hover {
+        opacity: 1;
+      }
+
+    }
+
+
+
 }
