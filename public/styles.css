@@ -284,7 +284,8 @@ body {
     font-family: "filson-pro";
     font-weight: 500;
     font-size: 18px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    text-align: center; }
   .faqs__sub {
     font-family: "filson-pro";
     font-weight: 300;
@@ -293,4 +294,23 @@ body {
     box-shadow: 0 0 20px 0 rgba(42, 40, 48, 0.1);
     padding: 30px;
     width: 85%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-bottom: 30px; }
+    .faqs__faq__wrapper a {
+      text-decoration: none; }
+    .faqs__faq hr {
+      margin-top: 10px;
+      height: 1px;
+      background-color: #eeeeee;
+      border: none; }
+  .faqs__question {
+    color: #f43085;
+    display: flex;
+    justify-content: space-between;
+    transition: .2s ease;
+    font-family: "filson-pro";
+    font-weight: 500; }
+  .faqs__answer {
+    font-family: "filson-pro";
+    font-weight: 300;
+    margin-top: 10px; }

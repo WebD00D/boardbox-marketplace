@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Faqs from './Faqs';
+
 class App extends Component {
   render() {
     return (
@@ -7,7 +9,7 @@ class App extends Component {
         <div className="header">
           <div className="nav">
             <div className="nav__wrapper">
-              <div className="nav__logo"><img src="http://getboardbox.com/wp-content/uploads/2016/05/BBSMALL.png" /></div>
+              <div className="nav__logo"><img src="http://getboardbox.com/wp-content/uploads/2016/05/BBSMALL.png" alt="Boardbox Logo" /></div>
               <div className="nav__links">
                 <div className="nav__links__link">Featured</div>
                 <div className="nav__links__link">FAQs</div>
@@ -24,7 +26,7 @@ class App extends Component {
         </div>
         <div className="featured-brand">
           <div className="featured-brand__tag">Featured Brand</div>
-          <div className="featured-brand__brand"><img src="https://voltfuse.com/wp-content/uploads/2016/10/regtm-boxlogo.png" /></div>
+          <div className="featured-brand__brand"><img src="https://voltfuse.com/wp-content/uploads/2016/10/regtm-boxlogo.png" alt="Voltfuse Logo" /></div>
           <div className="featured-brand__about">
             Lorem ipsum dolor set amit consectetur ipsum spentis
             der wolkemmen aus mitte bin deti. Auf dem wroker ruchsack
@@ -53,18 +55,20 @@ class App extends Component {
         </div>
 
         <div className="faqs">
-          <div className="faqs__headline">Have a question? We've got answers.</div>
-
-          <div className="faqs__faq">
-            <div className="faqs__question"></div>
-            <div className="faqs__answer"></div>
-          </div>
-
+          <Faqs />
         </div>
 
 
       </div>
     );
   }
+
+  handleCollapse(event) {
+    event.preventDefault();
+
+  }
+
+
+
 }
 export default App;
