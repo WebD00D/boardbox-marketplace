@@ -476,6 +476,14 @@ body {
     position: relative;
     top: -30px;
     border-radius: 3px;
+
+    z-index: 2;
+
+    &--hidden{
+      z-index: 1;
+    }
+
+
   }
 
 }
@@ -669,5 +677,79 @@ body {
   background-color: $black;
   opacity: 0;
   transition: 0.5s ease;
+  z-index: 1;
 
+  &--open {
+    opacity: 0.8;
+  }
+
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+
+  &__preferences {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__shipping {
+    display: flex;
+    margin-top:30px;
+    justify-content: space-between;
+
+    small {
+      font-size: 12px;
+      color: #cccccc;
+      font-style: italic;
+    }
+  }
+
+  &__section-header {
+    font-size: 12px;
+    color: #cccccc;
+    margin-bottom: 7px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      color: $pink;
+      font-size: 13px;
+    }
+
+    b {
+      color: $pink;
+      font-weight: 500;
+    }
+
+  }
+
+  &__edit {
+    height: 25px;
+    border-radius: 3px;
+    background-color: $pink;
+    color: white;
+    font-family: "filson-pro";
+    font-weight: 300;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    display: flex;
+    font-size: 12px;
+    transition: .2s ease;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $black;
+    }
+  }
+
+}
+
+.input-error {
+  background-image: linear-gradient(270deg,rgba(244,48,133,0.8) 0%, rgba(244, 0, 25, 0) 80%);
 }

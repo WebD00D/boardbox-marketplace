@@ -2,7 +2,7 @@ import React from 'react';
 
 import Step1 from './Step1';
 import Step2 from './Step2';
-
+import Step3 from './Step3';
 
 class Steps extends React.Component {
 
@@ -21,7 +21,7 @@ class Steps extends React.Component {
         checkoutText = 'Choose a Shipping Destination';
         break;
       case 3:
-        checkoutText = 'Review your Order & Pay'
+        checkoutText = 'Review Order & Pay'
         break;
       default:
 
@@ -46,26 +46,97 @@ class Steps extends React.Component {
     )
   }
 
-
   getStepDetails(){
     if ( this.state.step === 1 ) {
         return <Step1 />
     } else if ( this.state.step === 2 ) {
         return <Step2 />
     } else {
-        return <div>Hello from Step 3</div>
+        return <Step3 handleClick={(arg) => this.goToStep(arg)} />
     }
+  }
+
+  validate(input){
+    if (input.value === "") {
+      input.className += " input-error";
+      return false;
+    } else {
+      input.className = " ";
+      return true;
+    }
+  }
+
+  goToStep(step){
+    this.setState({ step: step })
   }
 
   goToNextStep(){
     switch (this.state.step) {
       case 1:
-        this.setState({ step: 2 })
+        // store size in local storage
+        let size = document.getElementById('txtSizeNeeded');
+
+        if ( this.validate(size) ){
+          localStorage.setItem('bbox_size-needed', size.value);
+          this.setState({ step: 2 })
+        }
+
         break;
       case 2:
+
+        let hasError = false;
+
+        let recipient = document.getElementById('txtRecipient');
+        let address1 = document.getElementById('txtAddress1');
+        let address2 = document.getElementById('txtAddress2');
+        let city = document.getElementById('txtCity');
+        let state = document.getElementById('txtStateProvince');
+        let zip = document.getElementById('txtZipPostal');
+        let country = document.getElementById('txtCountry');
+
+        if ( this.validate(recipient) ){
+          localStorage.setItem('bbox_recipient', recipient.value);
+        } else {
+          hasError = true;
+        }
+
+        if ( this.validate(address1) ){
+          localStorage.setItem('bbox_address1', address1.value);
+        } else {
+          hasError = true;
+        }
+
+        if ( this.validate(city) ){
+          localStorage.setItem('bbox_city', city.value);
+        } else {
+          hasError = true;
+        }
+
+        if ( this.validate(state) ){
+          localStorage.setItem('bbox_state', state.value);
+        } else {
+          hasError = true;
+        }
+
+        if ( this.validate(zip) ){
+          localStorage.setItem('bbox_zip', zip.value);
+        } else {
+          hasError = true;
+        }
+
+        if ( this.validate(state) ){
+          localStorage.setItem('bbox_country', country.value);
+        } else {
+          hasError = true;
+        }
+
+        if (!hasError){
           this.setState({ step: 3 })
-          break;
+        }
+
+        break;
       default:
+          // TODO: Do paypal stuff.
 
     }
   }
