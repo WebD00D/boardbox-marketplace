@@ -47,7 +47,7 @@ class App extends Component {
                   <div className="featured-brand__summary--pricing">
                     $14.99 <span>$25.00</span>
                   </div>
-                  <a href="#" className="featured-brand__btn">Get Yours</a>
+                  <a href="/order" className="featured-brand__btn">Get Yours</a>
                 </div>
               </div>
             </div>
@@ -63,10 +63,7 @@ class App extends Component {
     );
   }
 
-  handleCollapse(event) {
-    event.preventDefault();
 
-  }
 
 
 

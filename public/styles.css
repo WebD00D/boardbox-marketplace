@@ -3,7 +3,8 @@
 
 body {
   font-family: helvetica, arial, sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  margin: 0 auto; }
 
 .container {
   max-width: 80%;
@@ -314,3 +315,162 @@ body {
     font-family: "filson-pro";
     font-weight: 300;
     margin-top: 10px; }
+
+.order__header {
+  display: flex;
+  margin: 0 auto;
+  border-radius: 3px;
+  padding: 30px;
+  background-image: url("http://getboardbox.com/wp-content/uploads/2016/10/Snowy.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  justify-content: center;
+  align-items: center; }
+
+.order__headline {
+  font-family: "filson-pro";
+  font-weight: 500;
+  font-size: 50px;
+  color: white; }
+
+.order__form {
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: white;
+  box-shadow: 0 0 20px 0 rgba(42, 40, 48, 0.1);
+  padding: 30px;
+  position: relative;
+  top: -30px;
+  border-radius: 3px; }
+
+.steps {
+  display: flex;
+  justify-content: center;
+  font-family: "filson-pro";
+  font-weight: 500;
+  color: #2a2830;
+  flex-direction: column;
+  align-items: center; }
+  .steps .current-step__title {
+    margin-top: 5px;
+    font-family: "filson-pro";
+    font-weight: 500;
+    color: #2a2830; }
+  .steps .current-step span {
+    color: #cccccc; }
+  .steps__icons {
+    flex-direction: row;
+    display: flex;
+    width: 100px;
+    justify-content: space-around;
+    margin-top: 10px; }
+    .steps__icons div {
+      height: 3px;
+      width: 25px;
+      background-color: #cccccc; }
+  .steps--1 div:nth-child(1) {
+    background-color: #f43085; }
+  .steps--2 div:nth-child(1) {
+    background-color: #f43085; }
+  .steps--2 div:nth-child(2) {
+    background-color: #f43085; }
+  .steps--3 div:nth-child(1) {
+    background-color: #f43085; }
+  .steps--3 div:nth-child(2) {
+    background-color: #f43085; }
+  .steps--3 div:nth-child(3) {
+    background-color: #f43085; }
+  .steps__details {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    flex-direction: column; }
+  .steps__prompt-wrapper {
+    display: flex;
+    margin-top: 10px;
+    width: 100%; }
+  .steps__prompt {
+    font-weight: 500;
+    background-color: #ebeaec;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    display: flex;
+    width: 250px;
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    flex: 1;
+    font-size: 12px;
+    color: rgba(42, 40, 48, 0.5); }
+  .steps__answer {
+    display: flex;
+    flex-basis: 60%; }
+    .steps__answer input {
+      flex: 1;
+      background-color: #f2f2f4;
+      border: none;
+      padding-left: 15px;
+      font-size: 15px;
+      font-family: "filson-pro";
+      font-weight: 300;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px; }
+      .steps__answer input:focus {
+        outline: 0; }
+
+.next-step button {
+  margin-top: 30px;
+  height: 75px;
+  width: 75px;
+  border-radius: 100px;
+  border: none;
+  background-color: #2a2830;
+  color: white;
+  transition: .2s ease;
+  font-family: "filson-pro";
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 1px; }
+  .next-step button:focus, .next-step button:active {
+    outline: 0; }
+  .next-step button:hover {
+    background-color: rgba(42, 40, 48, 0.7);
+    cursor: pointer; }
+
+.dismiss-modal {
+  padding-bottom: 50px; }
+  .dismiss-modal__btn {
+    font-family: "filson-pro";
+    font-weight: 300;
+    height: 50px;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 100px;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    transition: 0.5s ease; }
+    .dismiss-modal__btn--open {
+      width: 250px;
+      background-color: rgba(255, 255, 255, 0.9); }
+    .dismiss-modal__btn:hover {
+      opacity: 0.8;
+      cursor: pointer; }
+
+.checkout-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #2a2830;
+  opacity: 0;
+  transition: 0.5s ease; }
