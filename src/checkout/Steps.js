@@ -46,6 +46,8 @@ class Steps extends React.Component {
     )
   }
 
+
+
   getStepDetails(){
     if ( this.state.step === 1 ) {
         return <Step1 />
@@ -136,8 +138,9 @@ class Steps extends React.Component {
 
         break;
       default:
-          // TODO: Do paypal stuff.
+          // TODO: Do Stripe stuff.
 
+          
     }
   }
 
